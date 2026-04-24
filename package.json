@@ -1,5 +1,5 @@
 {
-  "name": "noteui",
+  "name": "noteui-cli",
   "version": "0.1.0",
   "description": "A tiny terminal note-taking app built with OpenTUI",
   "module": "index.ts",

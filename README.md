@@ -30,7 +30,7 @@ bun index.ts
 
 ```bash
 # one-time global install from npm (after publish)
-npm i -g noteui
+npm i -g noteui-cli
 
 # then run from anywhere
 noteui
