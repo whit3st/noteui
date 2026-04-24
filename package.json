@@ -1,0 +1,29 @@
+{
+  "name": "noteui",
+  "version": "0.1.0",
+  "description": "A tiny terminal note-taking app built with OpenTUI",
+  "module": "index.ts",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "noteui",
+    "README.md"
+  ],
+  "bin": {
+    "noteui": "./noteui"
+  },
+  "scripts": {
+    "start": "bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.102"
+  }
+}

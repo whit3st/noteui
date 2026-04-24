@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# noteui - terminal note-taking sidebar
+# Usage: ./noteui
+#   or:  bun index.ts
+
+set -euo pipefail
+
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+  DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ "$SOURCE" != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+
+SCRIPT_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+exec bun "$SCRIPT_DIR/index.ts"
